@@ -12,6 +12,8 @@ App uses API provided by [date.nager.at](https://date.nager.at/)  for fetching t
 * Displays a list of all available countries 
 * Filters the available countries list based on an input field
 
+![app image](https://github.com/RolandGT/countries/blob/master/src/images/countries-app.jpg)
+
 ## Folder Structure
 
     └── src
