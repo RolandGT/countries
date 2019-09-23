@@ -1,0 +1,86 @@
+body {
+  height: 100vh;
+  background-color: rgba(255,255,255, 1);
+  background-image: url("./images/bg01a.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container{
+  background-color: white;
+}
+.side{
+  height: 70vh;
+  background-color: white;
+  background-image: url("./images/bg02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rol{
+  position:absolute;
+  width:auto;
+  margin:1rem;
+  height:5rem;
+  bottom:0;
+  color:#269dd6;
+  background-color: white;
+  padding:1rem;
+  font-family: "Lucida Grande",Tahoma,Geneva,Verdana,sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height:18.5714px;
+  letter-spacing: 1px;
+  margin-left:0.5rem !important;
+  border-bottom:4px solid rgb(50, 107, 157);
+  
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+  
+}
+.user-icon{
+  width:14px;
+  height:14px;
+  background-image: url("./images/user-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.user-icon-footer{
+  width:14px;
+  height:14px;
+  background-image: url("./images/user-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bottom{
+  background-color: rgb(114, 114, 114);
+  height:5rem;
+  width:auto;
+  position:fixed;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color:#fff;
+  
+}
+.footer-info, .user-icon-footer{
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .side, .rol, .user-icon, .author {
+    display:none;
+  }
+  .footer-info, .user-icon-footer{
+    
+    display: inline-block;
+    padding:1rem;
+  }
+}
