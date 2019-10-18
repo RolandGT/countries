@@ -14,7 +14,7 @@ function useFetch(url) {
                 method: 'GET',
 
                 headers: {
-                    
+                    'Origin':' https://react-rgt.netlify.com'
                     'Content-Type': 'application/json'
                 }
             }).catch(function (error) {

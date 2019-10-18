@@ -4,7 +4,7 @@ import './Country.css'
 
 const Country = props => {
 
-  const allCountriesUrl = "country/Api/v2/AvailableCountries";
+  const allCountriesUrl = "https://date.nager.at/Api/v2/AvailableCountries";
   const [countries, setCountries] = useState([]);
   const [data, loading] = useFetch(allCountriesUrl);
   let firstLetter = '';
