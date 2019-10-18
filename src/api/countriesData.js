@@ -14,7 +14,7 @@ function useFetch(url) {
                 method: 'GET',
                 mode: 'no-cors',
                 headers: {
-                    'Access-Contro-Alow-Origin': '*',
+                    'Access-Contro-Alow-Origin': 'https://date.nager.at',
                     'Content-Type': 'application/json'
                 }
             }).catch(function (error) {

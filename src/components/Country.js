@@ -3,8 +3,8 @@ import { useFetch } from "../api/countriesData";
 import './Country.css'
 
 const Country = props => {
-  
-  const allCountriesUrl = "https://date.nager.at/Api/v2/AvailableCountries";
+
+  const allCountriesUrl = "/Api/v2/AvailableCountries";
   const [countries, setCountries] = useState([]);
   const [data, loading] = useFetch(allCountriesUrl);
   let firstLetter = '';
@@ -16,7 +16,7 @@ const Country = props => {
     setCountries(data.sort(sortByProperty('value')));
     if (props.filterValue && props.filterValue !== '') {
         filterData();
-    } 
+    }
   }, [props, data, allCountriesUrl, suggestions]);
 
   var sortByProperty = function (property) {
@@ -39,7 +39,7 @@ const Country = props => {
       }
     }
   }
-  
+
   const renderData = countries.map((item, index) => {
     if(firstLetter !== item.value.charAt(0)){
       firstLetter = item.value.charAt(0);
@@ -63,7 +63,7 @@ const Country = props => {
       </div>
     )
   });
-  
+
   return (
     <>
       {loading ? (
