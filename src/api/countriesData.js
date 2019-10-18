@@ -12,9 +12,9 @@ function useFetch(url) {
         const fetchUrl = async () => {
             let response = await axios.get(url, {
                 method: 'GET',
-                mode: 'no-cors',
+
                 headers: {
-                    'Access-Contro-Alow-Origin': 'https://date.nager.at',
+                    
                     'Content-Type': 'application/json'
                 }
             }).catch(function (error) {
