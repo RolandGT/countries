@@ -3,13 +3,17 @@
 |Name|Email|
 |----|-----|
 |Rolandas Gedgaudas - T.|rolandas.gt@gmail.com|
+
+# Preview
+## You can view deployed app on netlify [**here**](https://roland-react-countries.netlify.com).
+
 # App description
 
 This project is a Reactjs app bootstrapped with [Create React App](https://github.com/facebook/create-react-app) version 16.9.0, that means app has functional components.
-App uses API provided by [date.nager.at](https://date.nager.at/)  for fetching the data. 
+App uses API provided by [date.nager.at](https://date.nager.at/)  for fetching the data.
 
-## App functionalities: 
-* Displays a list of all available countries 
+## App functionalities:
+* Displays a list of all available countries
 * Filters the available countries list based on an input field
 
 ![app image](https://github.com/RolandGT/countries/blob/master/src/images/countries-app.jpg)
@@ -72,7 +76,7 @@ useEffect(() => {
     setCountries(data.sort(sortByProperty('value')));
     if (props.filterValue && props.filterValue !== '') {
         filterData();
-    } 
+    }
   }, [props, data, allCountriesUrl, suggestions]);
 
   var sortByProperty = function (property) {
@@ -123,7 +127,7 @@ const filterData = ()=> {
       }
       );
       setCountries(suggestedCountries); // using useState filtered array is set.
-      //if there is no match 
+      //if there is no match
       if (suggestedCountries.length === 0){
           // sets true to show message "no suggestions"
         setSuggestions(true);
@@ -135,7 +139,7 @@ const filterData = ()=> {
   }
 ```
 
-Data is rendered with render data function which maps countires state. 
+Data is rendered with render data function which maps countires state.
 It also checks the first letter of the country name and if letter has changed in the next letter in the aphabet it is assigned to the variabe which is shown in front of the country list relating to countries of the same letter.
 
 ```javascript
@@ -243,5 +247,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-
