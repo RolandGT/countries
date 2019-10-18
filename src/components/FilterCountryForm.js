@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from "react";
 import './FilterCountryForm.css';
-import logo from '../images/grundfoslogo.png';
+import logo from '../images/logo.png';
 
 const FilterCountryForm = props => {
 
